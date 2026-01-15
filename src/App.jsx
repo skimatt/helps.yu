@@ -8,6 +8,7 @@ import AboutPage from './pages/About/AboutPage';
 import FAQPage from './pages/FAQ/FAQPage';
 import AdminPage from './pages/Admin/AdminPage';
 import TeamPage from './pages/Team/TeamPage';
+import AIChatBubble from './components/AIChatBubble';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/team" element={<TeamPage />} />
       </Routes>
+      <AIChatBubble /> {/* Tambahkan ini di paling bawah */}
       <Footer />
     </Router>
   );
