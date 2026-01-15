@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { X, Send, Loader2, Minus, Sparkles } from 'lucide-react';
-import contactData from '../data/contact.json';
 
 const AIChatBubble = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,12 +47,13 @@ const AIChatBubble = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[999] font-inter flex flex-col items-end">
+    /* FIX 1: Z-INDEX diturunkan sedikit (z-[80]) agar Navbar (z-[100]) tetap di atasnya */
+    <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[80] font-inter flex flex-col items-end">
       
       {/* Chat Window Container */}
       <div 
         className={`
-          mb-4 w-[320px] md:w-[360px] bg-white/80 backdrop-blur-xl rounded-[32px] border border-zinc-100 shadow-2xl overflow-hidden
+          mb-4 w-[280px] sm:w-[320px] md:w-[360px] bg-white/90 backdrop-blur-xl rounded-[32px] border border-zinc-100 shadow-2xl overflow-hidden
           transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] origin-bottom-right
           ${isOpen 
             ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto' 
@@ -62,21 +62,21 @@ const AIChatBubble = () => {
         `}
       >
         {/* Header */}
-        <div className="px-6 py-4 border-b border-zinc-50 flex items-center justify-between">
+        <div className="px-6 py-4 border-b border-zinc-50 flex items-center justify-between bg-white/50">
           <div className="flex items-center gap-2">
             <div className="w-1 h-1 bg-black rounded-full"></div>
             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-black">Yu-AI</span>
           </div>
-          <button onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-black transition-colors cursor-pointer">
+          <button onClick={() => setIsOpen(false)} className="text-zinc-300 hover:text-black transition-colors cursor-pointer p-1">
             <Minus size={18} />
           </button>
         </div>
 
         {/* Messages Area */}
-        <div className="h-[350px] overflow-y-auto px-6 py-6 space-y-6 no-scrollbar">
+        <div className="h-[300px] md:h-[350px] overflow-y-auto px-6 py-6 space-y-6 no-scrollbar">
           {messages.map((msg, idx) => (
             <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-              <div className={`max-w-[90%] text-xs leading-relaxed font-medium ${
+              <div className={`max-w-[90%] text-[11px] md:text-xs leading-relaxed font-medium ${
                 msg.role === 'user' 
                 ? 'text-black text-right' 
                 : 'text-zinc-500 border-l border-zinc-200 pl-4 py-1'
@@ -106,7 +106,7 @@ const AIChatBubble = () => {
             />
             <button 
               onClick={handleSend}
-              className="text-zinc-300 hover:text-black transition-colors disabled:opacity-30"
+              className="text-zinc-300 hover:text-black transition-colors disabled:opacity-30 cursor-pointer"
               disabled={isLoading}
             >
               <Send size={14} />
@@ -115,13 +115,12 @@ const AIChatBubble = () => {
         </div>
       </div>
 
-      {/* Trigger Button - Minimal Black Circle */}
+      {/* Trigger Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative w-12 h-12 bg-black flex items-center justify-center rounded-full hover:scale-110 active:scale-95 transition-all duration-500 shadow-xl shadow-black/10 cursor-pointer overflow-hidden"
+        className="group relative w-12 h-12 bg-black flex items-center justify-center rounded-full hover:scale-110 active:scale-95 transition-all duration-500 shadow-xl shadow-black/10 cursor-pointer overflow-hidden z-[81]"
       >
         <div className="relative w-full h-full flex items-center justify-center">
-            {/* Animasi Switch Icon Sparkles ke X */}
             <Sparkles 
                 size={18} 
                 className={`text-white absolute transition-all duration-500 ${isOpen ? 'opacity-0 scale-0 rotate-90' : 'opacity-100 scale-100 rotate-0'}`} 

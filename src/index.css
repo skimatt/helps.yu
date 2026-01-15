@@ -2,59 +2,78 @@
 
 @import "tailwindcss";
 
+/* ================= THEME ================= */
 @theme {
-  /* Font Definitions */
   --font-inter: "Inter", sans-serif;
   --font-playfair: "Playfair Display", serif;
 
-  /* Custom Animations */
   --animate-blob: blob 7s infinite;
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-fast: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-  @keyframes blob {
-    0%, 100% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(1deg); }
-  }
 }
 
+/* ================= BASE ================= */
 @layer base {
   * {
     @apply border-zinc-200;
   }
-  
+
   body {
     @apply bg-white text-black antialiased;
     font-family: var(--font-inter);
-    /* Mencegah horizontal scroll akibat dekorasi graffiti */
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 
-  /* Style khusus untuk teks Italic agar lebih "Graffiti" */
   italic, .italic {
     font-family: var(--font-playfair);
     letter-spacing: -0.05em;
   }
 }
 
-/* Custom selection agar tetap black/white */
+/* ================= MOBILE SAFE RULES ================= */
+
+/* ❌ JANGAN global smooth scroll */
+html {
+  scroll-behavior: auto;
+}
+
+/* ✅ Aktifkan smooth scroll hanya bila diperlukan */
+html.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Mobile tap HARUS pakai manipulation */
+a,
+button {
+  touch-action: manipulation;
+}
+
+/* ❗ JANGAN set pointer-events global ke a/button */
+
+/* Decorative helper (PAKAI INI SAJA) */
+.decorative {
+  pointer-events: none !important;
+}
+
+/* Interactive helper (opsional) */
+.interactive {
+  pointer-events: auto;
+}
+
+/* Hilangkan tap highlight iOS */
+a,
+button,
+nav * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ================= SELECTION ================= */
 ::selection {
   background-color: #000;
   color: #fff;
 }
 
-/* Smooth Scroll untuk kenyamanan navigasi */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Sembunyikan Scrollbar tapi tetap bisa scroll (Opsional untuk Clean Look) */
+/* ================= SCROLLBAR ================= */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
