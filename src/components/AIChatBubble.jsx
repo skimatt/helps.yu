@@ -49,16 +49,16 @@ const AIChatBubble = () => {
 
   return (
     <div className="fixed bottom-8 right-8 z-[999] font-inter">
-      {/* Trigger Button - Minimal Circle */}
-      {!isOpen && (
-        <button 
-          onClick={() => setIsOpen(true)}
-          className="group relative w-12 h-12 bg-white border border-zinc-100 flex items-center justify-center rounded-full hover:border-black transition-all duration-500 shadow-sm"
-        >
-          <Sparkles size={18} className="text-zinc-400 group-hover:text-black transition-colors" />
-          <span className="absolute top-0 right-0 h-2 w-2 bg-black rounded-full border-2 border-white"></span>
-        </button>
-      )}
+      {/* Trigger Button - Minimal Black Circle */}
+        {/* Trigger Button - Minimal Black Circle (Tanpa Titik Hijau) */}
+        {!isOpen && (
+          <button 
+            onClick={() => setIsOpen(true)}
+            className="group relative w-12 h-12 bg-black flex items-center justify-center rounded-full hover:scale-110 active:scale-95 transition-all duration-500 shadow-xl shadow-black/10 cursor-pointer"
+          >
+            <Sparkles size={18} className="text-white group-hover:rotate-12 transition-transform" />
+          </button>
+        )}
 
       {/* Chat Window - Slim & Transparent */}
       {isOpen && (
