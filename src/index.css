@@ -1,26 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  /* Font Inter Bold sesuai permintaan */
+  /* Font Definitions */
   --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
 
-  /* Animasi Custom */
-  --keyword-animation-blob: blob 7s infinite;
-  --keyword-animation-pulse-fast: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  /* Custom Animations */
+  --animate-blob: blob 7s infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-fast: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
   @keyframes blob {
     0%, 100% { transform: translate(0px, 0px) scale(1); }
     33% { transform: translate(30px, -50px) scale(1.1); }
     66% { transform: translate(-20px, 20px) scale(0.9); }
   }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(1deg); }
+  }
 }
 
 @layer base {
+  * {
+    @apply border-zinc-200;
+  }
+  
   body {
     @apply bg-white text-black antialiased;
     font-family: var(--font-inter);
+    /* Mencegah horizontal scroll akibat dekorasi graffiti */
+    overflow-x: hidden; 
+  }
+
+  /* Style khusus untuk teks Italic agar lebih "Graffiti" */
+  italic, .italic {
+    font-family: var(--font-playfair);
+    letter-spacing: -0.05em;
   }
 }
 
@@ -28,4 +47,18 @@
 ::selection {
   background-color: #000;
   color: #fff;
+}
+
+/* Smooth Scroll untuk kenyamanan navigasi */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sembunyikan Scrollbar tapi tetap bisa scroll (Opsional untuk Clean Look) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
