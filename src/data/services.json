@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "slug": "fullstack-framework-programming",
+    "nama": "Framework Programming",
+    "harga": "Mulai 200rb",
+    "deskripsi": "Solusi pemrograman berbagai framework: Laravel, CodeIgniter, React, Next.js, Vue, Express, hingga Django untuk sistem kompleks.",
+    "keyword": ["laravel", "nextjs", "react", "vue", "express", "django", "framework"],
+    "gambar": "https://skillicons.dev/icons?i=laravel,react,nextjs",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Programming%20Framework"
+  },
+  {
+    "id": 2,
+    "slug": "web-pro-crud-spk-skripsi",
+    "nama": "Web Development & SPK",
+    "harga": "Mulai 150rb",
+    "deskripsi": "App CRUD PHP, Sistem Pendukung Keputusan (AHP, TOPSIS, SAW, WP), e-commerce UMKM, hingga Landing Page Portfolio.",
+    "keyword": ["php", "spk", "ahp", "topsis", "laravel", "codeigniter", "mysql"],
+    "gambar": "https://skillicons.dev/icons?i=php,mysql,tailwind",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Web%20PHP/SPK"
+  },
+  {
+    "id": 3,
+    "slug": "mobile-android-flutter",
+    "nama": "Mobile App Development",
+    "harga": "Mulai 250rb",
+    "deskripsi": "Aplikasi Android/iOS menggunakan Flutter atau Kotlin untuk kebutuhan Prototype, Tugas Akhir, atau Aplikasi Bisnis sederhana.",
+    "keyword": ["android", "flutter", "mobile", "app", "ios", "kotlin"],
+    "gambar": "https://skillicons.dev/icons?i=flutter,kotlin,apple",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Mobile%20App"
+  },
+  {
+    "id": 4,
+    "slug": "jurnal-akademik-sinta",
+    "nama": "Jurnal & Publikasi SINTA",
+    "harga": "Mulai 200rb",
+    "deskripsi": "Pembuatan naskah jurnal ilmiah, cek Turnitin, hingga pendampingan submit ke jurnal nasional terindeks SINTA 1-6.",
+    "keyword": ["jurnal", "sinta", "scopus", "artikel ilmiah", "publikasi"],
+    "gambar": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/book-marked.svg",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Jurnal%20SINTA"
+  },
+  {
+    "id": 5,
+    "slug": "olah-data-spss-python",
+    "nama": "Olah Data & Statistik",
+    "harga": "Mulai 100rb",
+    "deskripsi": "Analisis data kuantitatif & kualitatif menggunakan SPSS, EViews, SmartPLS, hingga Data Science dengan Python.",
+    "keyword": ["spss", "statistik", "python", "data science", "excel", "eviews"],
+    "gambar": "https://skillicons.dev/icons?i=py,statsmodels,scipy",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Olah%20Data"
+  },
+  {
+    "id": 6,
+    "slug": "premium-ppt-sidang",
+    "nama": "Premium PPT & Canva",
+    "harga": "Mulai 40rb",
+    "deskripsi": "Desain slide presentasi untuk Sidang Skripsi atau Seminar Hasil dengan animasi transisi yang smooth & infografis.",
+    "keyword": ["ppt", "canva", "presentasi", "sidang", "sempro"],
+    "gambar": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/monitor-play.svg",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20PPT%20Premium"
+  },
+  {
+    "id": 7,
+    "slug": "makalah-paper-resume",
+    "nama": "Makalah, Esai & Resume",
+    "harga": "Mulai 50rb",
+    "deskripsi": "Penyusunan makalah lengkap, Esai kritis, Paper mata kuliah, hingga Review Jurnal/Buku yang bebas plagiasi.",
+    "keyword": ["makalah", "esai", "paper", "tugas", "resume", "review"],
+    "gambar": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/file-text.svg",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Makalah/Esai"
+  },
+  {
+    "id": 8,
+    "slug": "ui-ux-design-figma",
+    "nama": "UI/UX Design (Figma)",
+    "harga": "Mulai 80rb",
+    "deskripsi": "Desain antarmuka aplikasi (Mobile/Web), Wireframing, hingga High-Fidelity Prototype interaktif menggunakan Figma.",
+    "keyword": ["ui", "ux", "figma", "prototype", "design", "wireframe"],
+    "gambar": "https://skillicons.dev/icons?i=figma,xd,ps",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20UI/UX%20Design"
+  },
+  {
+    "id": 9,
+    "slug": "video-editing-motion",
+    "nama": "Video Editing & Motion",
+    "harga": "Mulai 70rb",
+    "deskripsi": "Edit video cinematic, konten TikTok/Reels, Video Animasi pembelajaran, hingga Motion Graphics promosi.",
+    "keyword": ["video", "editing", "motion graphics", "capcut", "premiere"],
+    "gambar": "https://skillicons.dev/icons?i=pr,ae",
+    "whatsapp": "https://wa.me/628123456789?text=Halo%20Admin,%20saya%20tertarik%20order%20Video%20Editing"
+  }
+]

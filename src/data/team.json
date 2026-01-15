@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nama": "Rahmat Mulia",
+    "role": "Full Stack Software Engineer",
+    "spesialis": "Web Application Architecture, Frontend & Backend Development",
+    "deskripsi": "Berpengalaman dalam pengembangan aplikasi web end-to-end dengan pendekatan sistematis dan scalable.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Rahmat&backgroundColor=f8f9fa"
+  },
+  {
+    "id": 2,
+    "nama": "Nuzulul",
+    "role": "Software Engineer",
+    "spesialis": "Web Development & System Integration",
+    "deskripsi": "Berfokus pada pengembangan sistem aplikasi yang stabil, efisien, dan mudah dikembangkan.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Nuzul&backgroundColor=f1f5f9"
+  },
+  {
+    "id": 3,
+    "nama": "Ulul Azmi",
+    "role": "Lecturer & Academic Researcher",
+    "spesialis": "Higher Education, Research Methodology, Academic Writing",
+    "deskripsi": "Dosen dan peneliti akademik yang berpengalaman dalam pengajaran serta pengembangan riset ilmiah.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Azmi&backgroundColor=fdf2f8"
+  },
+  {
+    "id": 4,
+    "nama": "Furqan",
+    "role": "Python Developer",
+    "spesialis": "Data Processing, Automation, Backend Development",
+    "deskripsi": "Mengembangkan solusi berbasis Python untuk otomasi, pengolahan data, dan sistem backend.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Furqan&backgroundColor=fff7ed"
+  },
+  {
+    "id": 5,
+    "nama": "Fadil",
+    "role": "Big Data Engineer",
+    "spesialis": "Data Analytics, Distributed Systems, Data Pipeline",
+    "deskripsi": "Menangani pengolahan dan analisis data skala besar untuk mendukung pengambilan keputusan berbasis data.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Fadil&backgroundColor=f0fdf4"
+  },
+  {
+    "id": 6,
+    "nama": "Razak",
+    "role": "UI/UX Designer",
+    "spesialis": "User Interface Design, User Experience Strategy, Design System",
+    "deskripsi": "Merancang antarmuka dan pengalaman pengguna yang fungsional, konsisten, dan berorientasi kebutuhan pengguna.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Razak&backgroundColor=fef2f2"
+  },
+  {
+    "id": 7,
+    "nama": "Amar",
+    "role": "Academic Journal Specialist",
+    "spesialis": "Scientific Writing, Journal Publication, SINTA Indexing",
+    "deskripsi": "Berpengalaman dalam pendampingan publikasi jurnal ilmiah nasional terindeks SINTA.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Amar&backgroundColor=eff6ff"
+  },
+  {
+    "id": 9,
+    "nama": "Alhirzi",
+    "role": "Video Editor",
+    "spesialis": "Video Editing, Motion Graphics, Content Creation",
+    "deskripsi": "Mengolah dan menyunting video kreatif untuk kebutuhan konten digital, promosi, dan media sosial.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Alhirzi&backgroundColor=faf5ff"
+  },
+  {
+    "id": 8,
+    "nama": "Zayadi",
+    "role": "Android Developer",
+    "spesialis": "Android App Development, Kotlin, Mobile UI",
+    "deskripsi": "Mengembangkan aplikasi Android yang responsif, stabil, dan siap produksi dengan fokus pada performa dan pengalaman pengguna.",
+    "gambar": "https://api.dicebear.com/7.x/notionists/svg?seed=Zayadi&backgroundColor=f0fdfa"
+  }
+]
